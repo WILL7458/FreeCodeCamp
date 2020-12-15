@@ -1,0 +1,190 @@
+<!doctype="html">
+<html>
+<link rel="stylesheet" href="Surveyform.css">
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">The Official History Lover's United Survey Form</h1>
+    <p id="description" class="description text-center">Please fill out this form so that the History Lover's of the world can be truly united!
+    </p>
+  </header>
+  <form id="survey-form">
+    <div-class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input 
+         type="text"
+         name="name"
+         id="name"
+         class="form-control"
+         placeholder="Please enter your name"
+         required
+             />
+     <div>
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"     
+        class="form-control"
+        placeholder="Please enter your email"
+        required
+       />
+      </div>
+    <div>
+    <div>
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input
+        type="number"
+        name="number" 
+        id="number"
+        class="form-control"
+        placeholder="Age"
+        min="5"
+        max="120"
+        />
+      </div>
+       <div-class="form-group">
+      <p>Which option best describes your level of experience in the field of history?</p>
+      <select id="dropdown" name="experience level" class="form-control" required>
+        <option disabled selected value>Please select your experience level</option>
+        <option value="begginer">Fan(Beginner)</option>
+        <option value="intermediate">Student(Intermediate)</option>
+        <option value="expert">Teacher(Expert)</option>
+        <option value="master">Certified Scholar(Master)</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <p>How often would you meet with a group of fellow history fanatics?</p>
+      <label>
+        <input 
+         name="schedule"
+         value="weekly"
+         type="radio"
+         class="input-radio"
+         checked
+               />Weekly</label>
+      <label>
+        <input
+          name="schedule"
+          value="monthly"
+          type="radio"
+          class="input-radio"
+               />Monthly</label>
+      <label>
+        <input
+          name="schedule"
+          value="yearly"
+          type="radio"
+          class="input-radio"
+               />Yearly</label>
+         </div>
+      
+         <div class="form-group">
+        <p>
+          What are you most looking to gain from collaborating with other history lovers?
+        </p>
+        <select id="to-gain" name="togain" class="form-group" required>
+          <option disabled selected value>Please select an option</option>
+          <option value="Knowledge">Knowledge</option>
+          <option value="Friends">Friends</option>
+          <option value="Debate">Academic Debate</option>
+          <option value="Resources">Study Resources</option>
+        </select>
+        </div>
+    
+        <div class="form-group">
+        <p>Which areas of history are you interested in?
+          <span class="clue">(Please check all that apply)</span>
+        </p>
+        
+        <label>
+          <input
+          name="interest"
+          value="historiography"
+          type="checkbox"
+          class="input-checkbox"
+          />Historiography</label>
+        <label>
+          <input
+           name="interest"
+           value="archeology"
+           type="checkbox"
+           class="input-checkbox"
+                 />Archeology</label>
+        <label>
+          <input
+           name="interest"
+           value="Ancient"
+           type="checkbox"
+           class="input-checkbox"
+                 />Ancient History</label>
+        <lable>
+          <input
+           name="interest"
+           value="antiquity"
+           type="checkbox"
+           class="input-checkbox"
+                 />Antiquity</label>
+        <label>
+          <input
+           name="interest"
+           value="middle-ages"
+           type="checkbox"
+           class="input-checkbox"
+                 />Middle-Ages</label>
+        <label>
+          <input
+           name="interest"
+           value="early modern"
+           type="checkbox"
+           class="input-checkbox"       
+                 />Early-Modern</label>
+        <label>
+          <input
+           name="interest"
+           value="modern"    
+           type="checkbox"
+           class="input-checkbox"
+                 />Modern</label>
+        <label>
+          <input
+           name="interest"
+           value="postmodernity"
+           type="checkbox"
+           class="input-checkbox"
+                 />Postmodernity</label>
+        <label>
+          <input
+           name="interest"
+           value="military"
+           type="checkbox"
+           class="input-checkbox"
+                 />Military</label>
+        <label>
+          <input
+           name="interest"
+           value="anthropology"
+           type="checkbox"
+           class="input-checkbox"
+                 />Anthropology</label>
+         </div>
+      
+         <div class="form-group">
+        <p>
+          Please add any additional information about yourself that would be useful for another history lover to know
+        </p>
+        <textarea
+          id="info"
+          class="input-textarea"
+          name="info"
+          placeholder="Please enter your info here...">
+        </textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+     </form>
+    </div>
+</html>            
